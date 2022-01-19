@@ -1,6 +1,6 @@
 # kiels-kit
 1. git clone https://github.com/kielSDeM/kiels-kit.git
-2. cd kiels-kit; ./kit.sh
+2. cd kiels-kit ; ./kit.sh
 - To get the admin password and continue with the Jenkins installaton. kubectl logs {pod name} -n jenkins
 
 - To connect to the Jenkins host use the commands:
