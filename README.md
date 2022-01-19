@@ -13,3 +13,5 @@
 minikubeip:port/
 
 - 162.000.00.100:51342/ (not actual port.)
+
+You can edit the file to install the programs that you want to have installed on your system.
