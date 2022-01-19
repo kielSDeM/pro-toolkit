@@ -3,12 +3,12 @@ from typing import List
 
 
 class Kubernetes:
-    command = ['sudo apt update',
+    command = ['sudo apt update -y',
                'wget –q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -',
                'sudo add-apt-repository "deb https://download.virtualbox.org/virtualbox/debian focal contrib"',
-               'sudo apt-get install virtualbox-6.1',
+               'sudo apt-get install virtualbox -y',
                'curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"',
-               'sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl',
+               'sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl -y',
                'kubectl version --client',
                'curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
   && chmod +x minikube',

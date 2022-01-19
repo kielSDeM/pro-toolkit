@@ -1,4 +1,4 @@
-from install_terraform import Terraform
+from terraform_installer import Terraform
 from install_docker import Docker
 from install_kubernetes import Kubernetes
 from jenkins_install import Jenkins
