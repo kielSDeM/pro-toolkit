@@ -1,22 +1,9 @@
 #!/bin/bash
-./pro-lan.sh 
-./alfa.sh 
-./metasploit.sh
-./meta3.sh 
-python3 dev_ops_installer.py
-echo "metasploit version:"
-msfconsole --version
-echo "npm version: "
-npm -v
-echo "node version: "
-node --version
-echo "Python version: "
-python3 --version
-echo "Rust version: "
-rustc --version
-echo "Terraform version:"
-terraform version
-echo "Nmap version:"
-nmap --version
-echo "Wireshark Version:"
-wireshark -v
+#./*.sh 
+declare -A prolang='(["metasploit version: "]=`msfconsole --version`
+["nmap version: "]=`nmap -v` ["wireshark version: "]=`wireshark --version`
+["python verison: "]=`python3 --version`
+["Rust version: "]=`rustc --version`)'
+for i in "${!prolang[@]}"; 
+    do echo "$i ${prolang[$i]}"; 
+    done
