@@ -1,5 +1,6 @@
 #!/bin/bash
-#./*.sh 
+#./*.sh
+#sudo apt-get install virtualbox-guest-additions-iso
 declare -A prolang='(["metasploit version: "]=`msfconsole --version`
 ["nmap version: "]=`nmap -v` ["wireshark version: "]=`wireshark --version`
 ["python verison: "]=`python3 --version`
