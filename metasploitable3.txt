@@ -1,0 +1,16 @@
+https://github.com/rapid7/metasploitable3/issues/555
+https://superuser.com/questions/614941/vagrant-fails-to-create-box-with-libvirt
+https://www.kali.org/docs/virtualization/install-virtualbox-host/
+https://stackoverflow.com/questions/35016414/vagrant-up-fails-with-cannot-load-winrm
+https://github.com/rapid7/metasploitable3
+sudo apt update; sudo apt install vagrant
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-libvirt
+vagrant plugin install winrm  
+vagrant plugin install winrm-fs  
+vagrant plugin install winrm-elevated
+mkdir metasploitable3-workspace
+cd metasploitable3-workspace
+curl -O https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile && vagrant up --provider virtualbox
+
+This is the process that I went through to install metasploitable3 on kali-linux.
