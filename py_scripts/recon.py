@@ -5,9 +5,9 @@ class Recon:
     print("This script will install some recon tools")
     recon = [
         "sudo apt-get update && sudo apt get upgrade -y",
-        "sudo apt-get install nmap",
-        "sudo apt-get install wireshark",
-        "sudo apt-get install aircrack-ng",
+        "sudo apt-get install nmap -y",
+        "sudo apt-get install wireshark -y",
+        "sudo apt-get install aircrack-ng -y",
         "curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall",
         "chmod 755 msfinstall",
         "./msfinstall",
