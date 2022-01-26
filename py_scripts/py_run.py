@@ -11,4 +11,5 @@ class Main:
     install = [Codium(), Recon(), Alfa(), Terraform(), Python3(), MiniConda()]
     for i in install:
         install[i]
+        break
     print('finished installing all scripts')
