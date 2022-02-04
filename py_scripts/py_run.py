@@ -1,15 +1,15 @@
 from recon import Recon
-from recon import Alfa
-from pro_py import Codium
-from pro_py import Python3
-from pro_py import MiniConda
-from terraform_installer import Terraform
+from pro_py import Programming
+from devops_kit import Dev_ops
 
 #Can remove classes that you don't want to install.
 class Main:
     print("this script will run through all install classes")
-    install = [Codium(), Recon(), Alfa(), Terraform(), Python3(), MiniConda()]
+    install = [Recon(), Programming(), Dev_ops()]
     for i in install:
         install[i]
         break
     print('finished installing all scripts')
+
+if __name__ == "__main__":
+    Main()
