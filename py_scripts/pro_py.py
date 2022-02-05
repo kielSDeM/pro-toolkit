@@ -26,7 +26,7 @@ class Programming:
     def node_js():
         command = ['sudo apt-get update',
                    'sudo apt-get install python-software-properties',
-                   'curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash –',
+                   'curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -',
                    'sudo apt-get install nodejs',
                    'npm install -g npx']
         for i in command:
