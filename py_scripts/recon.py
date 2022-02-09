@@ -2,9 +2,9 @@ import os
 
 
 class Recon:
-    def info_gather():
+    def info_gather(command):
         print("This script will install some recon tools")
-        recon = [
+        command = [
             "sudo apt-get update && sudo apt get upgrade -y",
             "sudo apt-get install nmap -y",
             "sudo apt-get install wireshark -y",
@@ -13,18 +13,15 @@ class Recon:
             "chmod 755 msfinstall",
             "./msfinstall",
             ]
-        for i in recon:
-            os.system(i)
+            return command
 
-        def alfa():
+        def alfa(command):
             print("This will install the alfa1900 adapter in ubuntu")
-            alfa = [
+            command = [
                 "sudo apt install build-essentials",
                 "sudo apt install bc",
                 "sudo apt install linux-headers-`uname -r",
                 "git clone https://github.com/aircrack-ng/rtl8812au.git",
                 "cd rtl8812au ; make ; sudo make install",
                 ]
-            for i in alfa:
-                os.system(i)
-    print("The installation is now complete")
+            return command

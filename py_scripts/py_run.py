@@ -4,12 +4,12 @@ from devops_kit import Dev_ops
 
 #Can remove classes that you don't want to install.
 class Main:
-    print("this script will run through all install classes")
-    install = [Recon(), Programming(), Dev_ops()]
+    print("this script will run through all installers")
+    install = [pro(command), devops(command)]
     for i in install:
-        install[i]
+            os.system(i)
         break
-    print('finished installing all scripts')
+    print('Programming languages and Devops tools.')
 
 if __name__ == "__main__":
     Main()
