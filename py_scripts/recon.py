@@ -13,15 +13,15 @@ class Recon:
             "chmod 755 msfinstall",
             "./msfinstall",
             ]
-            return command
+        return command
 
-        def alfa(command):
-            print("This will install the alfa1900 adapter in ubuntu")
-            command = [
+    def alfa(command):
+        print("This will install the alfa1900 adapter in ubuntu")
+        command = [
                 "sudo apt install build-essentials",
                 "sudo apt install bc",
                 "sudo apt install linux-headers-`uname -r",
                 "git clone https://github.com/aircrack-ng/rtl8812au.git",
                 "cd rtl8812au ; make ; sudo make install",
                 ]
-            return command
+        return command
