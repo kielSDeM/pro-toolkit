@@ -42,7 +42,7 @@ class Dev_ops:
     
     def all_dev(self):
         all = self.install_list
-        all.extend(self.terra())
+        all.extend(self.terraform())
         all.extend(self.mini_kube())
         all.extend(self.kubectl())
         all.extend(self.jenkins())
