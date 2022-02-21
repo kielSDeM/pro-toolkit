@@ -31,7 +31,7 @@ class Programming:
     def rust_wasm(self):
         rust_wa = ['sudo app-get update ; sudo apt-get install rustc',
         "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh",
-        raw_input("1"), 'cargo install wasm-pack', 'cargo install cargo-web',  ]
+        raw_input("1"), 'cargo install wasm-pack', 'cargo install cargo-web']
 
 
       
