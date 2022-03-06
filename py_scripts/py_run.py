@@ -1,3 +1,4 @@
+import os
 from recon import Recon
 from pro_py import Programming
 from devops_kit import Dev_ops
@@ -10,7 +11,7 @@ class Main:
     pro_dev.extend(pro.all())
     pro_dev.extend(dev.all_dev())
     
-    for i in len(pro_dev):
+    for i in pro_dev:
             os.system(i)
 
 if __name__ == "__main__":
