@@ -12,6 +12,12 @@ class Recon:
             "curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall",
             "chmod 755 msfinstall",
             "./msfinstall",
+            "sudo apt-get install dirb",
+            "sudo apt-get install filezilla -y",
+            "sudo apt-get install ffuf -y",
+            "sudo apt-get install john -y",
+            "sudo apt-get install hcxtools -y",
+            "sudo apt-get install gobuster -y"
             ]
         return command
 
