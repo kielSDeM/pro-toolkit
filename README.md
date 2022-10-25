@@ -1,13 +1,13 @@
 # pro-toolkit
-copy these commands into a bash terminal. If git is not installed then install git.
+Copy these commands into a bash terminal. If git is not installed then install git.
 ```
 sudo apt install git -y
 ```
-clone the repo in your destination folder.
+Clone the repo in your destination folder.
 ```
 git clone https://github.com/kielSDeM/pro-toolkit.git
 ```
-make the file executable.
+Make the file executable.
  ```
  cd pro-toolkit ; sudo chmod +xs kit.sh ;./kit.sh
  
