@@ -14,9 +14,9 @@ class Programming:
     #installs python3
     def python3(self):
         py3 = ['sudo apt-get update',
-                  'sudo apt install software-properties-common -y',
+                  'sudo apt-get install software-properties-common -y',
                   'sudo add-apt-repository ppa:deadsnakes/ppa',
-                  'sudo apt install python3.10']
+                  'sudo apt-get install python3.10']
         
         return py3
     #installs node.js
