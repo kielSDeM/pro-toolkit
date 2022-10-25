@@ -29,7 +29,7 @@ class Programming:
         return node
     
     def rust_wasm(self):
-        rust_wa = ['sudo app-get update ; sudo apt-get install rustc',
+        rust_wa = ['sudo apt-get update ; sudo apt-get install rustc',
         "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh",
         raw_input("1"), 'cargo install wasm-pack', 'cargo install cargo-web']
 
@@ -37,7 +37,7 @@ class Programming:
       
     #installs miniconda
     def miniconda3(self):
-        mini = ['sudo apt update && sudo apt upgrade -y --allow-downgrade',
+        mini = ['sudo apt-get update && sudo apt-get upgrade -y --allow-downgrade',
                    'mkdir -p ~/miniconda3', 'wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh',
                    'bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3',
                    'rm -rf ~/miniconda3/miniconda.sh', '~/miniconda3/bin/conda init bash',
