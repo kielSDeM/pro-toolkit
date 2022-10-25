@@ -17,7 +17,10 @@ class Recon:
             "sudo apt-get install ffuf -y",
             "sudo apt-get install john -y",
             "sudo apt-get install hcxtools -y",
-            "sudo apt-get install gobuster -y"
+            "sudo apt-get install gobuster -y",
+            "git clone https://github.com/ZerBea/hcxtools.git; cd hcxtools; sudo make && sudo make install; cd ~/",
+            "sudo apt-get install libcurl4-openssl-dev libssl-dev pkg-config",
+            "git clone https://github.com/ZerBea/hcxdumptool.git; cd hcxdumptool; sudo make && sudo make install; cd ~/"
             ]
         return command
 
