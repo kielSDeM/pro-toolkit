@@ -1,7 +1,7 @@
 # pro-toolkit
 Copy these commands into a bash terminal. If git is not installed then install git.
 ```
-sudo apt install git -y
+sudo apt-get install git -y
 ```
 Clone the repo in your destination folder.
 ```
