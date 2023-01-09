@@ -14,4 +14,4 @@ Make the file executable.
 ```
 
   the chmod is so that you dont have to enter your password when running the kit or you could add echo "<password>" | sudo -S apt-get update; sudo apt-get upgrade
-# pro-dev-kit
+
